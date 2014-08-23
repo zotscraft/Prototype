@@ -1,0 +1,17 @@
+12:21:09 **** Incremental Build of configuration Release for project Prototype ****
+make all 
+Building file: ../src/GameObject.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/enzo/projects/teste/Prototype/Prototype" -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/GameObject.d" -MT"src/GameObject.d" -o "src/GameObject.o" "../src/GameObject.cpp"
+Finished building: ../src/GameObject.cpp
+ 
+Building file: ../src/Prototype.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/enzo/projects/teste/Prototype/Prototype" -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Prototype.d" -MT"src/Prototype.d" -o "src/Prototype.o" "../src/Prototype.cpp"
+Finished building: ../src/Prototype.cpp
+ 
+Building target: Prototype
+Invoking: GCC C++ Linker
+g++  -o "Prototype"  ./src/GameObject.o ./src/Prototype.o   
+Finished building target: Prototype
+ 
