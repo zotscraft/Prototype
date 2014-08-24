@@ -1,20 +1,15 @@
-12:21:09 **** Incremental Build of configuration Release for project Prototype ****
+09:51:05 **** Incremental Build of configuration Debug for project Prototype ****
 make all 
-Building file: ../src/GameObject.cpp
+Building file: ../src/states/GameRunState.cpp
 Invoking: GCC C++ Compiler
-g++ -I"/home/enzo/projects/teste/Prototype/Prototype" -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/GameObject.d" -MT"src/GameObject.d" -o "src/GameObject.o" "../src/GameObject.cpp"
-Finished building: ../src/GameObject.cpp
- 
-Building file: ../src/Prototype.cpp
-Invoking: GCC C++ Compiler
-g++ -I"/home/enzo/projects/teste/Prototype/Prototype" -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Prototype.d" -MT"src/Prototype.d" -o "src/Prototype.o" "../src/Prototype.cpp"
-Finished building: ../src/Prototype.cpp
+g++ -I"/home/enzo/projects/teste/Prototype/Prototype" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/states/GameRunState.d" -MT"src/states/GameRunState.d" -o "src/states/GameRunState.o" "../src/states/GameRunState.cpp"
+Finished building: ../src/states/GameRunState.cpp
  
 Building target: Prototype
 Invoking: GCC C++ Linker
-g++  -o "Prototype"  ./src/GameObject.o ./src/Prototype.o   
+g++  -o "Prototype"  ./src/states/GameInitState.o ./src/states/GameRunState.o ./src/states/GameStateManager.o  ./src/GameObject.o ./src/Prototype.o   
 Finished building target: Prototype
  
 
-12:21:10 Build Finished (took 427ms)
+09:51:05 Build Finished (took 264ms)
 
