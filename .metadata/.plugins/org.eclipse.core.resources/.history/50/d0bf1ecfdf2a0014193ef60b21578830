@@ -1,0 +1,48 @@
+/*
+ * GameStateManager.cpp
+ *
+ *  Created on: Aug 23, 2014
+ *      Author: enzo
+ */
+
+#include <stddef.h>
+#include "include/GameStateManager.hpp"
+#include "include/GameState.hpp"
+
+GameStateManager::GameStateManager()
+	: states_(),
+	  running_(false) {
+
+}
+
+GameStateManager::~GameStateManager() {
+
+}
+
+void GameStateManager::Init() {
+
+}
+
+void GameStateManager::Finish() {
+
+}
+
+void GameStateManager::HandleEvents() {
+
+}
+
+void GameStateManager::Update() {
+
+}
+
+void GameStateManager::Draw() {
+
+}
+
+void GameStateManager::Start() {
+
+}
+
+void GameStateManager::Stop() {
+
+}

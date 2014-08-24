@@ -1,0 +1,18 @@
+/*
+ * GameStateManager.cpp
+ *
+ *  Created on: Aug 23, 2014
+ *      Author: enzo
+ */
+
+#include "include/GameStateManager.hpp"
+#include "include/GameState.hpp"
+
+GameStateManager::GameStateManager()
+	: running_(false)
+	  states_(NULL) {
+
+}
+
+
+
