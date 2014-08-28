@@ -33,15 +33,15 @@ void GameRunState::Resume() {
 
 }
 
-void GameRunState::HandleEvents(GameStateManager *state_manager) {
+void GameRunState::HandleEvents(GameManager *game_manager) {
 
 }
 
-void GameRunState::Update(GameStateManager *state_manager) {
+void GameRunState::Update(GameManager *game_manager) {
 
 }
 
-void GameRunState::Draw(GameStateManager *state_manager) {
+void GameRunState::Draw(GameManager *game_manager) {
 
 }
 

@@ -18,9 +18,9 @@ public:
 	void Pause();
 	void Resume();
 
-	void HandleEvents(GameStateManager *state_manager);
-	void Update(GameStateManager *state_manager);
-	void Draw(GameStateManager *state_manager);
+	void HandleEvents(GameManager *game_manager);
+	void Update(GameManager *game_manager);
+	void Draw(GameManager *game_manager);
 
 	static GameRunState* Instance() {
 		return &instance_;

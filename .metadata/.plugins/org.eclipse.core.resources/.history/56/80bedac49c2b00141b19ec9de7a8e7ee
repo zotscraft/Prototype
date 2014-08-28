@@ -1,0 +1,16 @@
+/*
+ * GameDisplay.hpp
+ *
+ *  Created on: Aug 24, 2014
+ *      Author: enzo
+ */
+
+#ifndef GAMEDISPLAY_HPP_
+#define GAMEDISPLAY_HPP_
+
+#include <allegro5/allegro.h>
+
+
+
+
+#endif /* GAMEDISPLAY_HPP_ */

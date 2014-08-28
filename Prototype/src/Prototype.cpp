@@ -3,24 +3,27 @@
 // Author      : zotscraft
 // Version     :
 // Copyright   : All rights to zotscraft corporation.
-// Description : Hello World in C++, Ansi-style
+// Description :
 //============================================================================
 
-#include <iostream>
-#include "include/Prototype.hpp"
-#include "include/GameObject.hpp"
+#include "include/GameManager.hpp"
+#include "include/states/GameIntroState.hpp"
 
-int main() {
-	GameObject* game = new GameObject();
-	GameState state;
+int main(int argc, char **argv) {
+	GameManager game_manager;
 
-	game->setState(RUNNING);
+	game_manager.Init();
+	game_manager.Start();
+	game_manager.ChangeState(GameIntroState::Instance());
 
-	while(state != EXITING) {
-		game->setState(EXITING);
-		game->getState(&state);
+	while(game_manager.isRunning()) {
+		game_manager.HandleEvents();
+		game_manager.Update();
+		game_manager.Draw();
+		game_manager.Stop();
 	}
 
-	delete game;
+	game_manager.Finish();
 	return 0;
 }
+

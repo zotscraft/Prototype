@@ -1,0 +1,46 @@
+/*
+ * GameManager.hpp
+ *
+ *  Created on: Aug 23, 2014
+ *      Author: enzo
+ */
+
+#ifndef GAMEMANAGER_HPP_
+#define GAMEMANAGER_HPP_
+
+#include <vector>
+#include <allegro5/allegro.h>
+
+class GameState;
+
+class GameSManager {
+public:
+	GameManager();
+	~GameManager();
+
+	int Init();
+	void Finish();
+
+	void Start();
+	void Stop();
+
+	bool isRunning();
+
+	void HandleEvents();
+	void Update();
+	void Draw();
+
+	void ChangeState(GameState *state);
+	void PushState(GameState *state);
+	void PopState();
+
+protected:
+	std::vector<GameState*> states_;
+	bool running_;
+	ALLEGRO_DISPLAY *display_;
+};
+
+
+
+
+#endif /* GAMEMANAGER_HPP_ */

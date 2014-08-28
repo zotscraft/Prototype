@@ -1,0 +1,39 @@
+/*
+ * GameInitState.hpp
+ *
+ *  Created on: Aug 23, 2014
+ *      Author: enzo
+ */
+
+#ifndef GAMEINITSTATE_HPP_
+#define GAMEINITSTATE_HPP_
+
+#include "include/states/GameState.hpp"
+
+class GameInitState : public GameState {
+public:
+	void Init();
+	void Finish();
+
+	void Pause();
+	void Resume();
+
+	void HandleEvents(GameManager *game_manager);
+	void Update(GameManager *game_manager);
+	void Draw(GameManager *game_manager);
+
+	static GameInitState* Instance() {
+		return &instance_;
+	}
+
+protected:
+	GameInitState();
+	~GameInitState();
+
+private:
+	static GameInitState instance_;
+};
+
+
+
+#endif /* GAMEINITSTATE_HPP_ */
