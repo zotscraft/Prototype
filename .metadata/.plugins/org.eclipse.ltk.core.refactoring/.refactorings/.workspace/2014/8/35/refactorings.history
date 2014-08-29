@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Delete resource &apos;Prototype/include/Prototype.hpp&apos;" deleteContents="false" description="Delete resource &apos;Prototype/include/Prototype.hpp&apos;" element1="/Prototype/include/Prototype.hpp" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1408890215394"/>
-</session>

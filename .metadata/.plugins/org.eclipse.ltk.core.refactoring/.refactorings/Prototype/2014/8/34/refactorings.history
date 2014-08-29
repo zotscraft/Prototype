@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename resource &apos;Prototype/src/GameStateManager&apos; to &apos;GameStateManager.cpp&apos;" description="Rename resource &apos;GameStateManager&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/GameStateManager" name="GameStateManager.cpp" stamp="1408809721430" updateReferences="true"/>
-</session>
